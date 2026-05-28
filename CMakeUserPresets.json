@@ -1,0 +1,121 @@
+{
+    "version": 8,
+	"configurePresets": [
+		{
+			"name": "cfg-chris-linux-ninja-dbg",
+			"displayName": "Chris: Linux: Ninja: Debug",
+			"binaryDir": "/home/chris/dv/_bld/ninja-build-stats-ninja-dbg",
+			"inherits": "cfg-linux-ninja",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Debug"
+			}
+		},
+		{
+			"name": "cfg-chris-linux-ninja-rel",
+			"displayName": "Chris: Linux: Ninja: RelWithDebInfo",
+			"binaryDir": "/home/chris/dv/_bld/ninja-build-stats-ninja-rel",
+			"inherits": "cfg-linux-ninja",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "RelWithDebInfo"
+			}
+		},
+		{
+			"name": "cfg-chris-macos-dbg",
+			"displayName": "Chris: macOS: Debug",
+			"binaryDir": "/Users/chris/dv/_bld/ninja-build-stats-dbg",
+			"inherits": "cfg-macos-ninja",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Debug"
+			}
+		},
+		{
+			"name": "cfg-chris-macos-rel",
+			"displayName": "Chris: macOS: RelWithDebInfo",
+			"binaryDir": "/Users/chris/dv/_bld/ninja-build-stats-rel",
+			"inherits": "cfg-macos-ninja",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "RelWithDebInfo"
+			}
+		},
+		{
+			"name": "cfg-chris-windows-ninja-cl-dbg",
+			"displayName": "Chris: Windows: Ninja (cl.exe): Debug",
+			"binaryDir": "z:/dv/_bld/ninja-build-stats-ninja-cl-dbg",
+			"inherits": "cfg-windows-ninja-cl",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Debug"
+			}
+		},
+		{
+			"name": "cfg-chris-windows-ninja-cl-rel",
+			"displayName": "Chris: Windows: Ninja (cl.exe): RelWithDebInfo",
+			"binaryDir": "z:/dv/_bld/ninja-build-stats-ninja-cl-rel",
+			"inherits": "cfg-windows-ninja-cl",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "RelWithDebInfo"
+			}
+		},
+		{
+			"name": "cfg-chris-windows-vs2026-dbg",
+			"displayName": "Chris: Windows: Visual Studio 2026: Debug",
+			"binaryDir": "z:/dv/_bld/ninja-build-stats-vs2026-dbg",
+			"inherits": "cfg-windows-vs2026",
+			"cacheVariables": {
+				"CMAKE_CONFIGURATION_TYPES": "Debug"
+			}
+		},
+		{
+			"name": "cfg-chris-windows-vs2026-rel",
+			"displayName": "Chris: Windows: Visual Studio 2026: RelWithDebInfo",
+			"binaryDir": "z:/dv/_bld/ninja-build-stats-vs2026-rel",
+			"inherits": "cfg-windows-vs2026",
+			"cacheVariables": {
+				"CMAKE_CONFIGURATION_TYPES": "RelWithDebInfo"
+			}
+		}
+	],
+	"buildPresets": [
+		{
+			"name": "bld-chris-linux-ninja-dbg",
+			"displayName": "Chris: Linux: Ninja: Debug",
+			"configurePreset": "cfg-chris-linux-ninja-dbg"
+		},
+		{
+			"name": "bld-chris-linux-ninja-rel",
+			"displayName": "Chris: Linux: Ninja: RelWithDebInfo",
+			"configurePreset": "cfg-chris-linux-ninja-rel"
+		},
+		{
+			"name": "bld-chris-macos-dbg",
+			"displayName": "Chris: macOS: Debug",
+			"configurePreset": "cfg-chris-macos-dbg"
+		},
+		{
+			"name": "bld-chris-macos-rel",
+			"displayName": "Chris: macOS: RelWithDebInfo",
+			"configurePreset": "cfg-chris-macos-rel"
+		},
+		{
+			"name": "bld-chris-windows-ninja-cl-dbg",
+			"displayName": "Chris: Windows: Ninja: Debug",
+			"configurePreset": "cfg-chris-windows-ninja-cl-dbg"
+		},
+		{
+			"name": "bld-chris-windows-ninja-cl-rel",
+			"displayName": "Chris: Windows: Ninja: RelWithDebInfo",
+			"configurePreset": "cfg-chris-windows-ninja-cl-rel"
+		},
+		{
+			"name": "bld-chris-windows-vs2026-dbg",
+			"displayName": "Chris: Windows: Visual Studio 2026: Debug",
+			"configurePreset": "cfg-chris-windows-vs2026-dbg",
+			"configuration": "Debug"
+		},
+		{
+			"name": "bld-chris-windows-vs2026-rel",
+			"displayName": "Chris: Windows: Visual Studio 2026: RelWithDebInfo",
+			"configurePreset": "cfg-chris-windows-vs2026-rel",
+			"configuration": "RelWithDebInfo"
+		}
+	]
+}

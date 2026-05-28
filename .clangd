@@ -1,0 +1,9 @@
+CompileFlags:
+  CompilationDatabase: z:/dv/_bld/ninja-build-stats-ninja-cl-dbg
+  Add: [-Wunused-variable, -Wunused-parameter, -Wunused-function]
+
+Diagnostics:
+  ClangTidy:
+    Add: [bugprone-use-after-move]
+  Suppress:
+    - operator_overload_needs_class_or_enum
