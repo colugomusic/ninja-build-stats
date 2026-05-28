@@ -205,7 +205,7 @@ auto make_context(mem_res* mem) -> context {
 	};
 }
 
-[[nodiscard]] static
+[[nodiscard]]
 auto make_arg_list(context* ctx, int argc, const char* argv[]) -> std::pmr::vector<std::string_view> {
 	auto args_beg = argv;
 	auto args_end = std::next(argv, static_cast<std::ptrdiff_t>(argc));
